@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    "polls.apps.PollsConfig",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -102,13 +103,10 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 
-LANGUAGE_CODE = "en-us"
-
-TIME_ZONE = "UTC"
-
-USE_I18N = True
-
-USE_TZ = True
+LANGUAGE_CODE = "zh-hant"  # 設定語言為繁體中文
+TIME_ZONE = "Asia/Taipei"  # 設定時區為台灣
+USE_I18N = True  # 啟用國際化
+USE_TZ = True  # 啟用時區處理
 
 
 # Static files (CSS, JavaScript, Images)
